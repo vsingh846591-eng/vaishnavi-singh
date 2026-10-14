@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#112b46"><title>VSSD Student Help Desk</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script defer src="app.js"></script></head>
+<body><header class="top"><a class="brand" href="#home"><span class="logo">V</span><span><b>VSSD</b><small>STUDENT HELP DESK</small></span></a><button id="menu" class="menu">☰</button><nav id="nav"><a href="#home">Home</a><a href="#academics">Academics</a><a href="#services">Student Services</a><a href="#notices">Notices</a><a href="#help">Help Centre</a><nav id="nav">
+  <a href="#home">Home</a>
+  <a href="#academics">Academics</a>
+  <a href="#services">Student Services</a>
+  <a href="#notices">Notices</a>
+  <a href="#help">Help Centre</a>
+  <a href="#scholarships">Scholarships</a>
+</nav>
+<a href="#scholarships">Scholarships</a>
+</nav><div class="actions"><button class="btn pale" id="loginOpen">Log in</button><button class="btn primary" id="registerOpen">Get started ↗</button></div></header>
+<main><section id="home" class="hero wrap"><div><div class="eyebrow"><i></i> ONE CAMPUS · ONE HELP DESK</div><h1>Your college life,<br><em>made simpler.</em></h1><p class="lead">A single digital desk for academic resources, student support, campus updates and everyday questions at Vikramajit Singh Sanatan Dharma College.</p><div class="hero-actions"><button class="btn primary big" id="heroLogin">Open student portal ↗</button><a class="btn outline big" href="#services">Explore services</a></div><div class="credit"><span>V</span><span>S</span><p><b>Built around student needs</b><small>Academic · Campus · Support</small></p></div></div><div class="visual"><div class="glow"></div><div class="dash"><div class="dashhead"><span class="logo">V</span><div><b>Student Hub</b><small>Everything in one place</small></div><span class="push">✧</span></div><div class="welcome"><small>YOUR CAMPUS COMPANION</small><h3>Good to have you here.</h3><p>Find what you need. Get back to learning.</p></div><div class="quick"><a href="#services"><i class="lilac">▤</i><b>Raise a query</b><small>Get support</small></a><a href="#academics"><i class="mint">▣</i><b>Study resources</b><small>Notes & syllabus</small></a><a href="#services"><i class="peach">⌕</i><b>Lost & found</b><small>Campus items</small></a><a href="#notices"><i class="blue">◷</i><b>Latest updates</b><small>Notices & events</small></a></div><div class="dashfoot"><i></i> Your student support space <span>✦</span></div></div><div class="float f1">✓ <span><b>One central hub</b><small>Less searching, more doing</small></span></div><div class="float f2">↗ <span><b>Campus updates</b><small>Published in one place</small></span></div></div></section>
+<section class="stats wrap"><div><b>01</b><span>One student help desk</span></div><div><b>02</b><span>Academic resources</span></div><div><b>03</b><span>Campus services</span></div><div><b>04</b><span>Student-first support</span></div></section>
+<section id="academics" class="section wrap"><div class="heading"><div><div class="eyebrow">LEARN WITHOUT THE RUNAROUND</div><h2>Your academic <em>corner.</em></h2></div><p>Explore programmes and learning resources. Verified course files and links can be published by the administrator.</p></div><div class="departments"><article><i class="blue">▦</i><h3>Arts & Humanities</h3><p>Programme information, subject resources and academic notices.</p><span>BA · MA</span></article><article><i class="mint">▤</i><h3>Commerce</h3><p>Course information, learning materials and student support.</p><span>B.Com · M.Com</span></article><article><i class="peach">⌘</i><h3>Science & Computing</h3><p>Course resources, syllabus links and academic assistance.</p><span>B.Sc · M.Sc · BCA · BBA*</span></article><article><i class="lilac">⚖</i><h3>Law</h3><p>Programme resources, academic notices and event updates.</p><span>Verify current programmes</span></article><article><i class="yellow">✎</i><h3>Teacher Education</h3><p>Programme guidance, notices and useful study links.</p><span>Verify current programmes</span></article><article><i class="rose">◎</i><h3>Physical Education</h3><p>Sports updates, participation information and campus activities.</p><span>Verify current programmes</span></article></div><p class="footnote">*Directory starter only. Confirm course availability, departments and eligibility on the <a href="https://vssdcollege.ac.in/" target="_blank" rel="noreferrer">official VSSD College website ↗</a>.</p><div class="resourcebox"><div><div class="eyebrow">STUDY SMARTER</div><h3>Notes, syllabus & learning links</h3><p>Filter resources published by the help-desk administrator.</p></div><div class="filters"><select id="courseFilter"><option value="">All courses</option><option>BCA</option><option>BBA</option><option>B.Sc</option><option>B.Com</option><option>BA</option><option>MA</option><option>All courses</option></select><select id="typeFilter"><option value="">All types</option><option>Notes</option><option>Syllabus</option><option>Lecture</option><option>Other</option></select><button class="btn primary" id="filterResources">Find resources</button></div></div><div id="resources" class="resourcegrid"><div class="empty">Connect Supabase to load published resources.</div></div></section>
+<section id="services" class="soft"><div class="section wrap"><div class="heading"><div><div class="eyebrow">HERE WHEN YOU NEED US</div><h2>Student <em>services.</em></h2></div><p>Raise a request, report an issue or take part in campus activities from one place.</p></div><div class="services"><article><i class="lilac">✉</i><h3>Query & complaint box</h3><p>Submit academic or campus concerns and track the status using your account.</p><button class="link" data-modal="ticketModal">Submit a request ↗</button></article><article><i class="peach">⌕</i><h3>Lost & found</h3><p>Report a lost or found item with a safe description and approximate location.</p><button class="link" data-modal="lostModal">Report an item ↗</button></article><article><i class="mint">✦</i><h3>Events & participation</h3><p>Register interest in college events, workshops and student activities.</p><button class="link" data-modal="eventModal">Register interest ↗</button></article><article><i class="blue">♧</i><h3>NCC, NSS & campus life</h3><p>Find updates for NCC, NSS, sports, cultural activities and student clubs.</p><a class="link" href="https://vssdcollege.ac.in/" target="_blank" rel="noreferrer">Check official updates ↗</a></article><article><i class="rose">▣</i><h3>Holidays & notices</h3><p>Read current notices and academic calendar links from official sources.</p><a class="link" href="https://vssdcollege.ac.in/" target="_blank" rel="noreferrer">Open official site ↗</a></article><article><i class="yellow">☏</i><h3>Contact & feedback</h3><p>For important or urgent matters, use college-published contact details.</p><a class="link" href="mailto:prin_vssd@rediffmail.com">Email college office ↗</a></article></div></div></section>
+<section id="notices" class="section wrap"><div class="heading"><div><div class="eyebrow">DON'T MISS A THING</div><h2>Campus <em>bulletin.</em></h2></div><a class="link" href="https://vssdcollege.ac.in/" target="_blank" rel="noreferrer">Official college website ↗</a></div><div class="noticelayout"><div id="announcements" class="announcements"><div class="empty">Live announcements appear here after an admin publishes them.</div></div><aside class="official"><div class="officialicon">↗</div><div class="eyebrow">OFFICIAL SOURCE</div><h3>Stay connected to VSSD.</h3><p>For current circulars, admissions, academic calendar and verified college information, visit the official site.</p><a class="btn pale" href="https://vssdcollege.ac.in/" target="_blank" rel="noreferrer">Visit VSSD website</a><hr><small>College contact details should be verified on the official website before use.</small></aside></div></section>
+<section id="help" class="help"><div class="wrap helpgrid"><div><div class="eyebrow">QUICK ANSWERS, ANYTIME</div><h2>Questions? Start <em>here.</em></h2><p>Ask the Student Help Desk assistant about finding resources, submitting requests or locating official information.</p><div class="chips"><button data-question="How do I submit a complaint?">Submit a complaint</button><button data-question="Where can I find syllabus and notes?">Find notes & syllabus</button><button data-question="Where can I see official holidays?">Holiday information</button></div></div><div class="chat"><div class="chathead"><span class="chatavatar">✦</span><div><b>VSSD Help Assistant</b><small><i></i> Quick guidance</small></div><span class="botlabel">FAQ BOT</span></div><div id="chatMessages" class="messages"><div class="botmsg">Hello! 👋 I can guide you around the Student Help Desk. What would you like help with?</div></div><form id="chatForm" class="chatinput"><input id="chatInput" placeholder="Ask a campus question..." aria-label="Ask the help assistant"><button aria-label="Send message">➤</button></form><small class="disclaimer">Automated guidance only. Confirm important information with official college sources.</small></div></div></section>
+<section class="cta wrap"><div><div class="eyebrow">YOUR CAMPUS, CONNECTED</div><h2>Make every student query<br><em>easier to solve.</em></h2></div><button class="btn primary big" id="ctaLogin">Enter student portal ↗</button></section>```html
+<!-- SCHOLARSHIP HELP DESK -->
+<section id="scholarships" class="scholarship-section">
+  <div class="scholarship-heading">
+    <span class="scholarship-tag">STUDENT FINANCIAL SUPPORT</span>
+    <h2>Scholarship <em>Help Desk</em></h2>
+    <p>
+      Explore scholarship portals, understand eligibility
+      requirements and prepare your documents in one place.
+    </p>
+  </div>
+
+  <div class="scholarship-grid">
+    <article class="scholarship-card">
+      <div class="scholarship-icon">✦</div>
+      <h3>UP Scholarship</h3>
+      <p>
+        Explore Uttar Pradesh scholarship and fee assistance
+        schemes. Check the current rules for your course.
+      </p>
+      <a href="https://scholarship.up.gov.in/"
+         target="_blank" rel="noopener noreferrer">
+        Visit UP Portal ↗
+      </a>
+    </article>
+
+    <article class="scholarship-card">
+      <div class="scholarship-icon">◎</div>
+      <h3>National Scholarship Portal</h3>
+      <p>
+        Explore central scholarship schemes and check
+        application requirements on the official portal.
+      </p>
+      <a href="https://scholarships.gov.in/"
+         target="_blank" rel="noopener noreferrer">
+        Explore NSP ↗
+      </a>
+    </article>
+
+    <article class="scholarship-card">
+      <div class="scholarship-icon">✓</div>
+      <h3>Document Checklist</h3>
+      <p>Keep these commonly requested documents ready, where applicable:</p>
+      <ul>
+        <li>Previous marksheet</li>
+        <li>Income certificate</li>
+        <li>Bank account details</li>
+        <li>Admission and fee details</li>
+        <li>Category or domicile certificate, if required</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="scholarship-note">
+    <strong>Before you apply</strong>
+    <p>
+      Eligibility, required documents and deadlines differ by scheme.
+      Confirm the latest instructions on the official portal.
+      Never share your password, OTP or bank PIN with anyone.
+    </p>
+  </div>
+</section>
+```</main>
+<footer><div class="footmain"><a class="brand" href="#home"><span class="logo">V</span><span><b>VSSD</b><small>STUDENT HELP DESK</small></span></a><p>A student-first digital support concept for Vikramajit Singh Sanatan Dharma College, Kanpur.</p><div class="social"><a href="https://vssdcollege.ac.in/" target="_blank" rel="noreferrer">Website ↗</a><a href="mailto:prin_vssd@rediffmail.com">Email ↗</a></div></div><div class="footbottom"><span>© <span id="year"></span> VSSD Student Help Desk · Student innovation project</span><span>Concept & implementation: <b>Vaishnavi Singh · BCA First Year</b></span><span><a href="https://vssdcollege.ac.in/" target="_blank" rel="noreferrer">Official VSSD site</a></span></div></footer>
+<div id="toast" class="toast" role="status"></div><div id="setupNotice" class="setup hidden"><b>Setup required:</b> add Supabase URL and anon key in <code>app.js</code> and run <code>supabase-schema.sql</code> in Supabase SQL Editor.</div>
+<div class="modal" id="authModal"><div class="backdrop" data-close="authModal"></div><div class="panel"><button class="x" data-close="authModal">×</button><div class="eyebrow">WELCOME TO YOUR CAMPUS HUB</div><h2 id="authTitle">Student login</h2><p class="intro">Use your registered email to access your student portal.</p><div class="tabs"><button class="active" data-auth="login">Log in</button><button data-auth="register">Create account</button></div><form id="authForm" class="form"><label id="nameWrap" class="hidden">Full name<input id="fullName" placeholder="Your full name"></label><label>Email address<input id="email" type="email" required placeholder="you@example.com"></label><label>Course / programme<select id="authCourse"><option>BCA</option><option>BBA</option><option>B.Sc</option><option>B.Com</option><option>BA</option><option>MA</option><option>Other</option></select></label><label>Password<input id="password" type="password" required minlength="8" placeholder="At least 8 characters"></label><button class="btn primary full" id="authSubmit">Log in securely</button><small class="formnote">Never share your password. Admin access is assigned separately by the database owner.</small></form></div></div>
+<div class="modal" id="portalModal"><div class="backdrop" data-close="portalModal"></div><div class="panel wide"><button class="x" data-close="portalModal">×</button><div class="portaltop"><div><div class="eyebrow">PERSONAL SPACE</div><h2 id="portalTitle">Student portal</h2><p id="portalSub" class="intro">Your requests and resources.</p></div><button class="btn outline" id="logout">Log out</button></div><div id="portalBody"></div></div></div>
+<div class="modal" id="ticketModal"><div class="backdrop" data-close="ticketModal"></div><div class="panel"><button class="x" data-close="ticketModal">×</button><div class="eyebrow">STUDENT SUPPORT</div><h2>Raise a query or complaint</h2><p class="intro">Sign in first. Do not include passwords or highly sensitive personal information.</p><form id="ticketForm" class="form"><label>Request type<select id="ticketType"><option>Academic query</option><option>Complaint</option><option>Fees / scholarship</option><option>Examination</option><option>Library</option><option>IT / portal issue</option><option>Other</option></select></label><label>Department / programme<select id="ticketCourse"><option>BCA</option><option>BBA</option><option>B.Sc</option><option>B.Com</option><option>BA / MA</option><option>Law</option><option>Teacher Education</option><option>Physical Education</option><option>Administration</option><option>Other</option></select></label><label>Subject<input id="ticketSubject" required maxlength="120" placeholder="Short summary"></label><label>Details<textarea id="ticketDetails" required maxlength="3000" rows="4" placeholder="Explain what help you need"></textarea></label><button class="btn primary full">Submit request</button></form></div></div>
+<div class="modal" id="lostModal"><div class="backdrop" data-close="lostModal"></div><div class="panel"><button class="x" data-close="lostModal">×</button><div class="eyebrow">CAMPUS COMMUNITY</div><h2>Lost & found item</h2><p class="intro">Do not post phone numbers, addresses or ID numbers. Sign in to submit.</p><form id="lostForm" class="form"><label>Report type<select id="lostKind"><option>Lost</option><option>Found</option></select></label><label>Item name<input id="lostTitle" required maxlength="100" placeholder="e.g. Water bottle"></label><label>Where / when (approx.)<input id="lostPlace" maxlength="160" placeholder="e.g. Library, afternoon"></label><label>Description<textarea id="lostDetails" required maxlength="1500" rows="3" placeholder="Distinctive details; avoid sensitive information"></textarea></label><button class="btn primary full">Post item report</button></form></div></div>
+<div class="modal" id="eventModal"><div class="backdrop" data-close="eventModal"></div><div class="panel"><button class="x" data-close="eventModal">×</button><div class="eyebrow">GET INVOLVED</div><h2>Event participation</h2><p class="intro">Register interest for an activity announced by the college. Sign in first.</p><form id="eventForm" class="form"><label>Event / activity<input id="eventName" required maxlength="140" placeholder="Name of event or workshop"></label><label>Department / programme<select id="eventCourse"><option>BCA</option><option>BBA</option><option>B.Sc</option><option>B.Com</option><option>BA / MA</option><option>Law</option><option>Teacher Education</option><option>Physical Education</option><option>NCC / NSS</option><option>Other</option></select></label><label>Message (optional)<textarea id="eventMessage" maxlength="1000" rows="3"></textarea></label><button class="btn primary full">Register interest</button></form></div></div>
+</body></html>
